@@ -305,9 +305,9 @@
 					{% for dests in dests %}
 						<div class="destination item">
 							<div class="destination_image">
-								<img src="{{dests.img.url}}" alt="" height="200" width="400">
+								<img src="{{dests.img.url}}" alt="" height="300" width="400">
 								{% if dests.specialoffer %}
-								<div class="spec_offer text-center"><a href="#">{{dests.specialoffer}}</a></div>
+								<div class="spec_offer text-center" ><a href="#">Offer_Upto {{dests.offerpercentage}}%</a></div>
 								{% endif %}
 							</div>
 							<div class="destination_content">

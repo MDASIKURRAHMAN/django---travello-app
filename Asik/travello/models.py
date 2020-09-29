@@ -26,4 +26,5 @@ class Destination(models.Model):
     desc = models.TextField()
     img = models.ImageField(upload_to='pics')
     price = models.IntegerField()
+    offerpercentage= models.IntegerField()
     specialoffer=models.BooleanField(default='False')
