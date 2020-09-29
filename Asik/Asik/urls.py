@@ -22,6 +22,7 @@ urlpatterns = [
     #path for calc app
     #path('', include("calc.urls")),
     path('', include("travello.urls")),
+    path('accounts/', include("accounts.urls")),
 
     path('admin/', admin.site.urls),
 ]
