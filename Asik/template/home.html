@@ -1,0 +1,76 @@
+
+{% extends 'basic.html' %}
+{%block content%}
+<!--
+<h2>hello {{name}}</h2>
+-->
+<!-- add using get method...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+    <form action="add">
+        <table>
+        <tr>
+        <td>
+        Enter Your First Number:
+        <td><input type="text" name="num1" placeholder="value1"> </td>
+       
+
+        </td>
+        </tr>
+        <tr>
+            <td>
+            Enter Your Second Number:
+            <td><input type="text" name="num2" placeholder="value2"> </td>
+           
+    
+            </td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+    <form action="add" method="post">
+        {% csrf_token %}
+        <table>
+        <tr>
+        <td>
+        Enter Your First Number:
+        <td><input type="text" name="num1" placeholder="value1"> </td>
+       
+
+        </td>
+        </tr>
+        <tr>
+            <td>
+            Enter Your Second Number:
+            <td><input type="text" name="num2" placeholder="value2"> </td>
+           
+    
+            </td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+{%endblock%}
